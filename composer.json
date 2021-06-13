@@ -1,0 +1,16 @@
+{
+    "name": "user/exam",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Tests\\Unit\\": "tests/Unit"
+        },
+        "files": [
+            "src/General.php",
+            "src/Sub.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
