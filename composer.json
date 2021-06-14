@@ -6,8 +6,8 @@
             "Tests\\Unit\\": "tests/Unit"
         },
         "files": [
-            "src/General.php",
-            "src/Sub.php"
+            "src/Fly.php",
+            "src/Ticket.php"
         ]
     },
     "require-dev": {

@@ -20,13 +20,13 @@ class Fly
         $this->list[] = new Ticket(1,"S","Fic");
     }
 
-    public function getNameById(int $id = null)
+    public function getNameById(string $class,int $id = null)
     {
         
         if ($id != null){
             foreach($this->list as $item){
 
-                if($item->getId() == $id){
+                if($item->getId() == $id && $item->getFlyClass() == $class){
                     return $item->getName();
                 }
             }
@@ -37,7 +37,7 @@ class Fly
     public function countOfTicketsByClass(string $var = null)
     {
         if ($var != null){
-            
+
             $count = 0;
 
             foreach($this->list as $item){
@@ -52,3 +52,4 @@ class Fly
         throw new Error("no arguments given!!!");
     }
 }
+
